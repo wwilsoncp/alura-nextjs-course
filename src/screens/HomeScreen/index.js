@@ -212,6 +212,7 @@ export default function HomeScreen() {
                       <Icon
                         styleSheet={{
                           iconVariant: 'chevronRight',
+                          size: '16px',
                           marginLeft: theme.space.xpx,
                         }}
                         aria-hidden="true"
