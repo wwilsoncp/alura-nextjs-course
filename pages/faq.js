@@ -29,7 +29,7 @@ export default function FaqPage(props) {
   return (
     <div>
       <Head>
-        <title>Faq Alura Cases</title>
+        <title>FAQ - Alura Cases</title>
       </Head>
       <h1>Alura Cases - Perguntas</h1>
       <Link href="/">
