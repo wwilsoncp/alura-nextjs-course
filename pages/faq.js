@@ -1,5 +1,6 @@
-import Head from "next/head";
-import Link from "../src/components/Link";
+import FAQScreen from "../src/screens/FAGScreen";
+
+export default FAQScreen;
 
 // export async function getServerSideProps(context) {
 //   console.log('Em Mode DEV (yarn start) sempre executa esse método')
@@ -24,32 +25,32 @@ export async function getStaticProps() {
   }
 }
 
-export default function FaqPage(props) {
-  console.log('props', props);
-  return (
-    <div>
-      <Head>
-        <title>FAQ - Alura Cases</title>
-      </Head>
-      <h1>Alura Cases - Perguntas</h1>
-      <Link href="/">
-        Home
-      </Link>
-      <ul>
-        {props?.faq?.map(({ answer, question }) => {
-          return (
-            <li key={question}>
-              <article>
-                <h2>{question}</h2>
-                <p>{answer}</p>
+// export default function FaqPage(props) {
+//   console.log('props', props);
+//   return (
+//     <div>
+//       <Head>
+//         <title>FAQ - Alura Cases</title>
+//       </Head>
+//       <h1>Alura Cases - Perguntas</h1>
+//       <Link href="/">
+//         Home
+//       </Link>
+//       <ul>
+//         {props?.faq?.map(({ answer, question }) => {
+//           return (
+//             <li key={question}>
+//               <article>
+//                 <h2>{question}</h2>
+//                 <p>{answer}</p>
 
-              </article>
-            </li>)
-        }
-        )
-        }
+//               </article>
+//             </li>)
+//         }
+//         )
+//         }
 
-      </ul>
-    </div>
-  )
-}
+//       </ul>
+//     </div>
+//   )
+// }
