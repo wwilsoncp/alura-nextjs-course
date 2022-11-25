@@ -1,5 +1,5 @@
 module.exports = {
-  trailingSlash: true,
+  trailingSlash: true, // adiciona a / no final da url automaticamente
   async redirects() {
     return [
       {
